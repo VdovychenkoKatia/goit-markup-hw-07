@@ -419,64 +419,10 @@ button {
   }
 }
 
-/* =============================header=============================== */
-.logo-link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--basic-logo-color);
-}
-
-.logo-studio-header {
-  color: var(--title-color);
-}
-
-.mobile-menu-close-btn {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  padding: 0;
-  cursor: pointer;
-  background: var(--footer-color-text);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobile-social-icons-list {
-  justify-content: center;
-  display: flex;
-  gap: 56px;
-  margin-top: 48px;
-}
-.mobile-social-link {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background-color: var(--basic-logo-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobile-social-link:focus .mobile-social-link:hover {
-  background-color: var(--hover-color);
-}
-
 /*==============================HEADER==============================*/
 
-/*logo*/
-/* .logo-link {
+/* logo*/
+.logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -508,10 +454,11 @@ button {
 .header-nav {
   display: flex;
   align-items: center;
-} */
+}
+*/
 
 /*menu*/
-/* 
+
 .menu {
   display: flex;
 }
@@ -569,7 +516,7 @@ button {
 .portfolio,
 .studio {
   color: var(--hover-color);
-} */
+}
 
 /*contacts*/
 /* .contacts {
