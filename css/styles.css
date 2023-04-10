@@ -451,15 +451,9 @@ button {
   background-color: var(--white-color);
 }
 
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-*/
+/*==================menu================*/
 
-/*menu*/
-
-.menu {
+/* .menu {
   display: flex;
 }
 
@@ -516,7 +510,7 @@ button {
 .portfolio,
 .studio {
   color: var(--hover-color);
-}
+} */
 
 /*contacts*/
 /* .contacts {
