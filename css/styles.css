@@ -210,11 +210,14 @@ button {
   }
 
   .mobile-menu-open {
-    /* background-color: transparent; */
-    background-color: blueviolet;
+    background-color: transparent;
     border: none;
     padding: 0;
     line-height: 0;
+  }
+
+  .icon {
+    stroke: var(--title-color);
   }
 
   .mobile-menu-list {
