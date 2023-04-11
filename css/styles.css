@@ -393,6 +393,45 @@ button {
   color: var(--white-color);
 }
 
+/* CHARACTERISTIC ?????????????????????????????????????/*/
+.characteristic-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.characteristic-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 72px;
+}
+
+.characteristic-text-about {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.characteristic-icons-container {
+  display: none;
+}
+
+.characteristic-list {
+  display: flex;
+}
+
+.characteristic-list-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.characteristic-list-item:not(:last-child) {
+  margin-right: 24px;
+}
 /* ====================================================================== TABLET =========================================================================== */
 
 @media screen and (min-width: 768px) {
@@ -516,16 +555,6 @@ button {
   max-width: 1200px;
 }
 
-/* @media screen and (min-width: 768px) {
-  .hero-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-bg/tab-dark-bg.jpg);
-  }
-} */
-
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -570,6 +599,32 @@ button {
 .btn-studio:hover {
   background-color: var(--hover-color);
   color: var(--white-color);
+}
+
+/* CHARACTERISTIC ??????????????????????????????????????????*/
+
+.characteristic-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+
+.characteristic-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.characteristic-text-about {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* ====================================================================== DESKTOP ========================================================================== */
@@ -623,16 +678,6 @@ button {
   margin-right: auto;
   max-width: 1440px;
 }
-
-/* @media screen and (min-width: 1200px) {
-  .hero-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-bg/hero-bg.jpg);
-  }
-} */
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
@@ -756,7 +801,7 @@ button {
 /*==============================STUDIO TEXT==============================*/
 
 /*characteristic*/
-.characteristic-icons-container {
+/* .characteristic-icons-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -793,7 +838,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
+} */
 
 /*what are we doing*/
 .section-title {
