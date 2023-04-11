@@ -426,15 +426,88 @@ button {
     display: block;
   }
 
-  .section {
+  .section-one {
     display: none;
   }
-  /* ================================ 
-====================================
-====================================
-====================================
-====================================
-===================================== */
+
+  /* our team */
+  .our-team-section {
+    background-color: #f4f4fd;
+    padding-top: 96px;
+    padding-bottom: 24px;
+  }
+
+  .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 72px;
+  }
+
+  .our-team-list-item {
+    max-width: 264px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  .our-team-list-container {
+    padding: 32px 16px;
+  }
+
+  .our-team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+
+  .our-team-work {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+
+  .studio-card-icons-list {
+    justify-content: center;
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+  }
+
+  .studio-card-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--basic-logo-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .studio-card-link:hover,
+  .studio-card-link:focus {
+    background-color: var(--hover-color);
+  }
+
+  /* ==========================
+==============================
+=======================
+==============================
+====================== */
 
   /* Modal window */
   .backdrop {
@@ -864,14 +937,92 @@ button {
     color: var(--main-color-text);
   }
 
-  .section {
+  .section-one {
     display: none;
   }
 
-  /* ==================================
-  =====================================
-  ==================================
-  ================================== */
+  /* our team */
+  .our-team-section {
+    background-color: #f4f4fd;
+    padding: 96px 0;
+  }
+
+  .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 72px;
+  }
+
+  .our-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
+
+  .our-team-list-item {
+    max-width: 264px;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  .our-team-list-container {
+    padding: 32px 16px;
+  }
+
+  .our-team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+
+  .our-team-work {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+
+  .studio-card-icons-list {
+    justify-content: center;
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+  }
+
+  .studio-card-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--basic-logo-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .studio-card-link:hover,
+  .studio-card-link:focus {
+    background-color: var(--hover-color);
+  }
+
+  /* ==========================
+==============================
+=======================
+==============================
+====================== */
 
   /*MODAL WINDOW*/
 
@@ -1158,14 +1309,6 @@ button {
     margin-bottom: 48px;
     margin-right: auto;
     margin-left: auto;
-    /* width: 496px; */
-
-    /* font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--white-color); */
   }
 
   .characteristic-section {
@@ -1233,10 +1376,15 @@ button {
     margin-right: 24px;
   }
 
-  /* ==================================
-  ===================================
-  ================================
-  ====================================== */
+  .our-team-section {
+    padding: 120px 0;
+  }
+
+  /* ==========================
+==============================
+=======================
+==============================
+====================== */
 
   /*MODAL WINDOW*/
 
@@ -1616,7 +1764,7 @@ button {
 /*our team*/
 
 /*icons*/
-
+/* 
 .studio-card-icons-list {
   justify-content: center;
   display: flex;
@@ -1691,7 +1839,7 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-color-text);
-}
+} */
 
 /*==============================PORTFOILIO==============================*/
 
