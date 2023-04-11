@@ -426,6 +426,10 @@ button {
     display: block;
   }
 
+  .section {
+    display: none;
+  }
+
   .section-one {
     display: none;
   }
@@ -935,6 +939,10 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-color-text);
+  }
+
+  .section {
+    display: none;
   }
 
   .section-one {
