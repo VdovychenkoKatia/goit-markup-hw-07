@@ -426,9 +426,9 @@ button {
     display: block;
   }
 
-  .section {
+  /* .section {
     display: none;
-  }
+  } */
 
   .section-one {
     display: none;
@@ -941,9 +941,9 @@ button {
     color: var(--main-color-text);
   }
 
-  .section {
+  /* .section {
     display: none;
-  }
+  } */
 
   .section-one {
     display: none;
