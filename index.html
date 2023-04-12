@@ -246,28 +246,79 @@
           <h2 class="section-title">What are we doing</h2>
           <ul class="our-work-list list">
             <li class="our-work-list-item">
-              <img
-                src="./images/about/computer.jpg"
-                alt="Computer"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/computer.webp    1x,
+                    ./images/about/computer@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about/computer.jpg    1x,
+                    ./images/about/computer@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/about/computer.jpg"
+                  alt="Computer"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="our-work-list-item">
-              <img
-                src="./images/about/message.jpg"
-                alt="Phone with message"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/message.webp    1x,
+                    ./images/about/message@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about/message.jpg    1x,
+                    ./images/about/message@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/about/message.jpg"
+                  alt="message"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="our-work-list-item">
-              <img
-                src="./images/about/phone.jpg"
-                alt="Phone with article"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/phone.webp    1x,
+                    ./images/about/phone@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about/phone.jpg    1x,
+                    ./images/about/phone@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/about/phone.jpg"
+                  alt="phone"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
           </ul>
         </div>
