@@ -247,7 +247,7 @@ button {
   .mobile-link{
     color: var(--title-color); 
   }
-  
+
   /* ====================================================================== MOBILE =========================================================================== */
 
   @media screen and (max-width: 408px) {
@@ -1074,7 +1074,7 @@ button {
   }
 
   .menu-item:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 35px;
   }
 
   .currentanimation::after {
@@ -1121,7 +1121,7 @@ button {
 
   .contacts-link {
     display: block;
-    padding: 0 0 12px 0;
+    margin: 0 0 12px 0;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
