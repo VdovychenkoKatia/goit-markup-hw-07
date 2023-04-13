@@ -410,7 +410,7 @@ button {
   }
 
   .characteristic-text-about {
-    margin-bottom: 72px;
+    padding-bottom: 96px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -437,8 +437,8 @@ button {
   /* our team */
   .our-team-section {
     background-color: #f4f4fd;
+    padding-bottom: 96px;
     padding-top: 96px;
-    padding-bottom: 24px;
   }
 
   .section-title {
@@ -600,10 +600,14 @@ button {
     background-color: var(--footer-icons);
   }
 
+.footer-icons-container {
+    margin-bottom: 72px;
+  }
+
   .footer-icons-list {
     display: flex;
     gap: 16px;
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
     justify-content: center;
   }
 
@@ -649,12 +653,6 @@ button {
     background-color: var(--hover-color);
     border-color: var(--hover-color);
   }
-
-  /* ==========================
-==============================
-=======================
-==============================
-====================== */
 
   /* Modal window */
   .backdrop {
@@ -737,10 +735,20 @@ button {
     padding-left: 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
+  
   .modal-form-input:focus {
     outline: none;
     border-color: var(--basic-logo-color);
+  }
+
+  .modal-form-input-desc {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--light-slate-subtle);
+    margin-top: 8px;
+    margin-bottom: 4px;
+    display: block;
   }
 
   .modal-form-input-comment {
@@ -870,6 +878,125 @@ button {
   .modal-form-submit:hover {
     background-color: var(--hover-color);
     border-color: var(--hover-color);
+  }
+
+  /* ==========================
+==============================
+=======================PORTFOLIO=======================
+==============================
+====================== */
+
+  .portfolio-section {
+    padding-top: 48px;
+    background-color: var(--white-color);
+  }
+
+  .filter-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 16px 30px;
+    margin-bottom: 48px;
+  }
+
+  .btn-portfolio {
+    padding: 8px 16px;
+    background: var(--background-color);
+    border: 1px solid var(--footer-color-text);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--basic-logo-color);
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-portfolio:hover,
+  .btn-portfolio:focus {
+    background-color: var(--hover-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-color: var(--hover-color);
+    color: var(--white-color);
+  }
+
+  .portfolio-foto-list {
+    margin-bottom: 48px;
+  }
+
+  .portfolio-card-title {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+  }
+
+  .portfolio-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-color-text);
+  }
+
+  .portfolio-card-description {
+    padding: 32px 0 32px 16px;
+    border-bottom: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+  }
+
+  .portfolio-foto-list-item {
+    background: var(--white-color);
+    width: 100%;
+    position: relative;
+    margin-bottom: 48px;
+  }
+
+  .portfolio-link {
+    display: block;
+    position: relative;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .portfolio-link:hover,
+  .portfolio-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  .portfolio-cover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--background-color);
+    background-color: var(--basic-logo-color);
+    height: 100%;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .portfolio-foto-list-item:hover .portfolio-cover-text {
+    transform: translateY(0);
+  }
+
+  .portfolio-img-back {
+    position: relative;
+    overflow: hidden;
   }
 }
 
@@ -1315,12 +1442,6 @@ button {
     border-color: var(--hover-color);
   }
 
-  /* ==========================
-==============================
-=======================
-==============================
-====================== */
-
   /*MODAL WINDOW*/
 
   .backdrop {
@@ -1538,8 +1659,124 @@ button {
     background-color: var(--hover-color);
     border-color: var(--hover-color);
   }
+
+  /* ==========================
+==============================
+=======================PORTFOLIO=======================
+==============================
+====================== */
+
+  .portfolio-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+
+  .btn-portfolio {
+    padding: 12px 24px;
+    background: var(--background-color);
+    border: 1px solid var(--footer-color-text);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--basic-logo-color);
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-portfolio:hover,
+  .btn-portfolio:focus {
+    background-color: var(--hover-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-color: var(--hover-color);
+    color: var(--white-color);
+  }
+  .portfolio-foto-list {
+		display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+	}
+	.portfolio-card-title {
+		margin-bottom: 8px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.2;
+		letter-spacing: 0.02em;
+		color: var(--title-color);
+	}
+	.portfolio-text {
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+		color: var(--main-color-text);
+	}
+	.portfolio-card-description {
+		padding: 32px 0 32px 16px;
+		border-bottom: 1px solid #e7e9fc;
+		border-right: 1px solid #e7e9fc;
+		border-left: 1px solid #e7e9fc;
+	}
+	
+	.portfolio-foto-list-item {
+		background: var(--white-color);
+		flex-basis: calc((100% - 24px) / 2);
+	}
+	
+	.portfolio-link {
+		display: block;
+		position: relative;
+		transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
+	.portfolio-link:hover,
+	.portfolio-link:focus {
+		box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+			0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	}
+	
+	.portfolio-cover-text {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+		color: var(--background-color);
+		background-color: var(--basic-logo-color);
+		height: 100%;
+		width: 100%;
+		padding-left: 32px;
+		padding-right: 32px;
+		padding-top: 40px;
+		transform: translateY(100%);
+		transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
+	.portfolio-foto-list-item:hover .portfolio-cover-text {
+		transform: translateY(0);
+	}
+	
+	.portfolio-img-back {
+		position: relative;
+		overflow: hidden;
+	} 
+
 }
-/* ====================================================================== DESKTOP ========================================================================== */
+/* ========================= DESKTOP ======================================================================================================================= */
 
 @media screen and (min-width: 1200px) {
   .logo-link {
@@ -1587,7 +1824,7 @@ button {
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1440px;
+    width: 1440px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -1712,12 +1949,6 @@ button {
     margin-left: auto;
   }
 
-  /* ==========================
-==============================
-=======================
-==============================
-====================== */
-
   /*MODAL WINDOW*/
 
   .backdrop {
@@ -1935,6 +2166,131 @@ button {
     background-color: var(--hover-color);
     border-color: var(--hover-color);
   }
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  /* ==========================
+==============================
+=======================PORTFOLIO=======================
+==============================
+====================== */
+
+  .portfolio-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+
+ .btn-portfolio {
+  padding: 12px 24px;
+
+  background: var(--background-color);
+  border: 1px solid var(--footer-color-text);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--basic-logo-color);
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  background-color: var(--hover-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: var(--hover-color);
+  color: var(--white-color);
+}
+
+.portfolio-foto-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-card-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-color-text);
+}
+
+.portfolio-card-description {
+  padding: 32px 0 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+}
+
+.portfolio-foto-list-item {
+  background: var(--white-color);
+  width: calc((100% - 48px) / 3);
+  position: relative;
+}
+
+.portfolio-link {
+  display: block;
+  position: relative;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-cover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--background-color);
+  background-color: var(--basic-logo-color);
+  height: 100%;
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-foto-list-item:hover .portfolio-cover-text {
+  transform: translateY(0);
+}
+
+.portfolio-img-back {
+  position: relative;
+  overflow: hidden;
+}
+
 }
 
 /*========================================================================= HEADER ==========================================================================*/
@@ -2174,7 +2530,7 @@ button {
 } */
 
 /*==============================PORTFOILIO==============================*/
-
+/* 
 .portfolio-section {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -2185,10 +2541,10 @@ button {
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
-}
+} */
 
 /*button portfolio*/
-.btn-portfolio {
+/* .btn-portfolio {
   padding: 12px 24px;
 
   background: var(--background-color);
@@ -2289,7 +2645,7 @@ button {
 .portfolio-img-back {
   position: relative;
   overflow: hidden;
-}
+} */
 
 /*==============================CUSTOMERS==============================*/
 /* 
