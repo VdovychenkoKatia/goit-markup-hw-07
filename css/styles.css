@@ -502,6 +502,10 @@ button {
     border-radius: 0px 0px 4px 4px;
   }
 
+  .team-list {
+    margin-bottom: 72px;
+  }
+
   .our-team-list-container {
     padding: 32px 16px;
   }
@@ -1215,6 +1219,8 @@ button {
   .characteristic-section {
     /* margin-top: 96px; */
     background-color: var(--white-color);
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .characteristic-icons-container {
@@ -1571,6 +1577,15 @@ button {
   .modal-form-input:focus {
     outline: none;
     border-color: var(--basic-logo-color);
+  }
+
+  .modal-form-input-desc {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    display: block;
   }
 
   .modal-form-input-comment {
